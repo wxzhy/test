@@ -1,0 +1,33 @@
+{
+    "log": {
+        "loglevel": "warning",
+        "error": "err.log"
+    },
+    "inbounds": [
+        {
+            "listen": "80",
+            "protocol": "vless",
+            "settings": {
+                "clients": [
+                    {
+                        "id": "12b0714e-2a77-4609-8a17-6d0a832e17d3", 
+                    }
+                ],
+                "decryption": "none"
+            },
+            "streamSettings": {
+                "network": "ws",
+                "security": "none",
+                "wsSettings": {
+                    "path": "/8a17" 
+                }
+            }
+        }
+    ],
+    "outbounds": [
+        {
+            "protocol": "freedom",
+            "settings": {}
+        }
+    ]
+}
